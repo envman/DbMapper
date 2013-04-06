@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'DbMapper' target in the 'DbMapper' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

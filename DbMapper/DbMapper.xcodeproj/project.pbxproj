@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A58A186170EDC1600E8C841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A185170EDC1600E8C841 /* Foundation.framework */; };
+		4A58A195170EDC1600E8C841 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A194170EDC1600E8C841 /* SenTestingKit.framework */; };
+		4A58A197170EDC1600E8C841 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A196170EDC1600E8C841 /* UIKit.framework */; };
+		4A58A198170EDC1600E8C841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A185170EDC1600E8C841 /* Foundation.framework */; };
+		4A58A19B170EDC1600E8C841 /* libDbMapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A182170EDC1600E8C841 /* libDbMapper.a */; };
+		4A58A278170F2D0200E8C841 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A277170F2D0200E8C841 /* libsqlite3.dylib */; };
+		4A9826FD17104F310066C6F9 /* libDbMapper.Demo.DataAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9826FB17104F310066C6F9 /* libDbMapper.Demo.DataAccess.a */; };
+		4A9826FE17104F310066C6F9 /* libFmdb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9826FC17104F310066C6F9 /* libFmdb.a */; };
+		7E8490A47D0648EE19BAC5EB /* FMDBResult.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E849CC1BE08421761A60E7E /* FMDBResult.h */; };
+		7E8490B7EE6BFDEDA91B06A1 /* MultipleTestMappable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849384CC31BB92C2701620 /* MultipleTestMappable.m */; };
+		7E849151741904F7B4067E8C /* Test_Mappable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849FB9BF070C8F0DAD83E9 /* Test_Mappable.m */; };
+		7E84919D35BD29FA2DFBF873 /* Mapping.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E84980ABE301CCFA06F679F /* Mapping.h */; };
+		7E8491CA3CF84A1514AC23B4 /* DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849CEE324935B8ADEA7C3C /* DataHelper.m */; };
+		7E8492587141DC3D5471FD28 /* Database.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E849128440FEFFF41E948D2 /* Database.h */; };
+		7E849480DF414C00EAFAD039 /* AlternateNameMappable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849BA4EBDDAF1E4A04DF4E /* AlternateNameMappable.m */; };
+		7E84953D81D729480B3D6DFF /* DataHelperTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8498E285C4B730038111F5 /* DataHelperTestObject.m */; };
+		7E8495904FC28F46C3E23A56 /* Test_DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E84932E47CDCD7D61DCFC64 /* Test_DataHelper.m */; };
+		7E84959F1233F449BB2EB827 /* TestDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849AAD01751552C1BE1392 /* TestDatabase.m */; };
+		7E8495E1F17BF742EEE8146A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E8496983C28E78F8DED7EF2 /* InfoPlist.strings */; };
+		7E8495ECCCCFBAF69B2547DE /* FMDBDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E84956092EC25A6FE470EC4 /* FMDBDatabase.m */; };
+		7E84971C880CF3E36FC07518 /* FMDBResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E84962F036A3E1D3C047CC7 /* FMDBResult.m */; };
+		7E8497DC6EEB4FB39B6FC5DD /* DatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E84986777438A38DFB64BD9 /* DatabaseResult.m */; };
+		7E849933BD8BC8C40D6A3E6C /* Mappable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E849BD1FC29F7906E722B0B /* Mappable.h */; };
+		7E84993C8A42EC02F28415BF /* Mappable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849E9EB1266BC3B891D335 /* Mappable.m */; };
+		7E849B26B96F076EF5651001 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849472FAAC6375836F244C /* Database.m */; };
+		7E849B7AC2A667122E00ECE1 /* DatabaseResult.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E8494926AE14CAFD5D5420C /* DatabaseResult.h */; };
+		7E849BE2279895C296FA4709 /* TestMappable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849C6F1289DA43D1F7B56B /* TestMappable.m */; };
+		7E849D5F79C2C1D6ECA86CE6 /* Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849B42374A3DF6B623C271 /* Mapping.m */; };
+		7E849E6D32190071422815CB /* FMDBDatabase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E849498D4FB027E01990ABC /* FMDBDatabase.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A58A199170EDC1600E8C841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A58A17A170EDC1600E8C841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A58A181170EDC1600E8C841;
+			remoteInfo = DbMapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A58A180170EDC1600E8C841 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				7E849933BD8BC8C40D6A3E6C /* Mappable.h in CopyFiles */,
+				7E84919D35BD29FA2DFBF873 /* Mapping.h in CopyFiles */,
+				7E849E6D32190071422815CB /* FMDBDatabase.h in CopyFiles */,
+				7E8492587141DC3D5471FD28 /* Database.h in CopyFiles */,
+				7E849B7AC2A667122E00ECE1 /* DatabaseResult.h in CopyFiles */,
+				7E8490A47D0648EE19BAC5EB /* FMDBResult.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A58A182170EDC1600E8C841 /* libDbMapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDbMapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A58A185170EDC1600E8C841 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A58A189170EDC1600E8C841 /* DbMapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DbMapper-Prefix.pch"; sourceTree = "<group>"; };
+		4A58A193170EDC1600E8C841 /* DbMapperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DbMapperTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A58A194170EDC1600E8C841 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4A58A196170EDC1600E8C841 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4A58A277170F2D0200E8C841 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4A9826FB17104F310066C6F9 /* libDbMapper.Demo.DataAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDbMapper.Demo.DataAccess.a; path = "../DbMapper.Demo.DataAccess/build/Release-iphoneos/libDbMapper.Demo.DataAccess.a"; sourceTree = "<group>"; };
+		4A9826FC17104F310066C6F9 /* libFmdb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFmdb.a; path = "../Fmdb/build/Release-iphoneos/libFmdb.a"; sourceTree = "<group>"; };
+		7E849003C7B1F5EA61614D63 /* DataHelperTestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHelperTestObject.h; sourceTree = "<group>"; };
+		7E84903EB07993E0E5C0DB6B /* DataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHelper.h; sourceTree = "<group>"; };
+		7E8490F15FE175910A8A27D1 /* TestDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDatabase.h; sourceTree = "<group>"; };
+		7E849128440FEFFF41E948D2 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		7E8492A24B76B91E65D52BE6 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E84932E47CDCD7D61DCFC64 /* Test_DataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_DataHelper.m; sourceTree = "<group>"; };
+		7E84934230E71A7293BDCF49 /* MultipleTestMappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleTestMappable.h; sourceTree = "<group>"; };
+		7E84937EDEDA8E138C404E97 /* AlternateNameMappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlternateNameMappable.h; sourceTree = "<group>"; };
+		7E849384CC31BB92C2701620 /* MultipleTestMappable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleTestMappable.m; sourceTree = "<group>"; };
+		7E849472FAAC6375836F244C /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		7E8494926AE14CAFD5D5420C /* DatabaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseResult.h; sourceTree = "<group>"; };
+		7E849498D4FB027E01990ABC /* FMDBDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBDatabase.h; sourceTree = "<group>"; };
+		7E84956092EC25A6FE470EC4 /* FMDBDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBDatabase.m; sourceTree = "<group>"; };
+		7E84962F036A3E1D3C047CC7 /* FMDBResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBResult.m; sourceTree = "<group>"; };
+		7E8496CDFBE0A7E88EF4C023 /* DbMapperTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "DbMapperTests-Info.plist"; sourceTree = "<group>"; };
+		7E84980ABE301CCFA06F679F /* Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapping.h; sourceTree = "<group>"; };
+		7E84986777438A38DFB64BD9 /* DatabaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseResult.m; sourceTree = "<group>"; };
+		7E849895B125117FA6AC213C /* TestMappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMappable.h; sourceTree = "<group>"; };
+		7E8498E285C4B730038111F5 /* DataHelperTestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHelperTestObject.m; sourceTree = "<group>"; };
+		7E8499AC8C9DEFF6DD3CE329 /* Test_Mappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_Mappable.h; sourceTree = "<group>"; };
+		7E849AAD01751552C1BE1392 /* TestDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDatabase.m; sourceTree = "<group>"; };
+		7E849B42374A3DF6B623C271 /* Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapping.m; sourceTree = "<group>"; };
+		7E849B8E72B5E0BC38989E9E /* Test_DataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_DataHelper.h; sourceTree = "<group>"; };
+		7E849BA4EBDDAF1E4A04DF4E /* AlternateNameMappable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlternateNameMappable.m; sourceTree = "<group>"; };
+		7E849BD1FC29F7906E722B0B /* Mappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mappable.h; sourceTree = "<group>"; };
+		7E849C6F1289DA43D1F7B56B /* TestMappable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMappable.m; sourceTree = "<group>"; };
+		7E849CC1BE08421761A60E7E /* FMDBResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBResult.h; sourceTree = "<group>"; };
+		7E849CEE324935B8ADEA7C3C /* DataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHelper.m; sourceTree = "<group>"; };
+		7E849E9EB1266BC3B891D335 /* Mappable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mappable.m; sourceTree = "<group>"; };
+		7E849FB9BF070C8F0DAD83E9 /* Test_Mappable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_Mappable.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A58A17F170EDC1600E8C841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9826FD17104F310066C6F9 /* libDbMapper.Demo.DataAccess.a in Frameworks */,
+				4A9826FE17104F310066C6F9 /* libFmdb.a in Frameworks */,
+				4A58A278170F2D0200E8C841 /* libsqlite3.dylib in Frameworks */,
+				4A58A186170EDC1600E8C841 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A58A18F170EDC1600E8C841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A58A195170EDC1600E8C841 /* SenTestingKit.framework in Frameworks */,
+				4A58A197170EDC1600E8C841 /* UIKit.framework in Frameworks */,
+				4A58A198170EDC1600E8C841 /* Foundation.framework in Frameworks */,
+				4A58A19B170EDC1600E8C841 /* libDbMapper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A58A179170EDC1600E8C841 = {
+			isa = PBXGroup;
+			children = (
+				4A9826FB17104F310066C6F9 /* libDbMapper.Demo.DataAccess.a */,
+				4A9826FC17104F310066C6F9 /* libFmdb.a */,
+				4A58A277170F2D0200E8C841 /* libsqlite3.dylib */,
+				4A58A275170EEC3800E8C841 /* Project */,
+				4A58A276170EEC5900E8C841 /* Source */,
+				4A58A19C170EDC1600E8C841 /* Tests */,
+			);
+			sourceTree = "<group>";
+		};
+		4A58A183170EDC1600E8C841 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A182170EDC1600E8C841 /* libDbMapper.a */,
+				4A58A193170EDC1600E8C841 /* DbMapperTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A58A184170EDC1600E8C841 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A185170EDC1600E8C841 /* Foundation.framework */,
+				4A58A194170EDC1600E8C841 /* SenTestingKit.framework */,
+				4A58A196170EDC1600E8C841 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A58A187170EDC1600E8C841 /* DbMapper */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A188170EDC1600E8C841 /* Supporting Files */,
+			);
+			path = DbMapper;
+			sourceTree = "<group>";
+		};
+		4A58A188170EDC1600E8C841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A189170EDC1600E8C841 /* DbMapper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A58A19C170EDC1600E8C841 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7E849FB9BF070C8F0DAD83E9 /* Test_Mappable.m */,
+				7E8499AC8C9DEFF6DD3CE329 /* Test_Mappable.h */,
+				7E8492107497A9459FE56639 /* Test Objects */,
+				7E84932E47CDCD7D61DCFC64 /* Test_DataHelper.m */,
+				7E849B8E72B5E0BC38989E9E /* Test_DataHelper.h */,
+			);
+			name = Tests;
+			path = DbMapperTests;
+			sourceTree = "<group>";
+		};
+		4A58A275170EEC3800E8C841 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A183170EDC1600E8C841 /* Products */,
+				4A58A184170EDC1600E8C841 /* Frameworks */,
+				4A58A187170EDC1600E8C841 /* DbMapper */,
+				7E849366CAC589EE2336199F /* Tests Supporting Files */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		4A58A276170EEC5900E8C841 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7E849E9EB1266BC3B891D335 /* Mappable.m */,
+				7E849BD1FC29F7906E722B0B /* Mappable.h */,
+				7E84980ABE301CCFA06F679F /* Mapping.h */,
+				7E849B42374A3DF6B623C271 /* Mapping.m */,
+				7E849451A94A44E64B353FCD /* Database */,
+				7E849CEE324935B8ADEA7C3C /* DataHelper.m */,
+				7E84903EB07993E0E5C0DB6B /* DataHelper.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		7E8492107497A9459FE56639 /* Test Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7E849C6F1289DA43D1F7B56B /* TestMappable.m */,
+				7E849895B125117FA6AC213C /* TestMappable.h */,
+				7E849AAD01751552C1BE1392 /* TestDatabase.m */,
+				7E8490F15FE175910A8A27D1 /* TestDatabase.h */,
+				7E849384CC31BB92C2701620 /* MultipleTestMappable.m */,
+				7E84934230E71A7293BDCF49 /* MultipleTestMappable.h */,
+				7E849BA4EBDDAF1E4A04DF4E /* AlternateNameMappable.m */,
+				7E84937EDEDA8E138C404E97 /* AlternateNameMappable.h */,
+				7E849ACC1585A0B6E5170D55 /* DataHelper */,
+			);
+			path = "Test Objects";
+			sourceTree = "<group>";
+		};
+		7E849366CAC589EE2336199F /* Tests Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E8496CDFBE0A7E88EF4C023 /* DbMapperTests-Info.plist */,
+				7E8496983C28E78F8DED7EF2 /* InfoPlist.strings */,
+			);
+			name = "Tests Supporting Files";
+			path = DbMapperTests;
+			sourceTree = "<group>";
+		};
+		7E849451A94A44E64B353FCD /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				7E84956092EC25A6FE470EC4 /* FMDBDatabase.m */,
+				7E849498D4FB027E01990ABC /* FMDBDatabase.h */,
+				7E849472FAAC6375836F244C /* Database.m */,
+				7E849128440FEFFF41E948D2 /* Database.h */,
+				7E84986777438A38DFB64BD9 /* DatabaseResult.m */,
+				7E8494926AE14CAFD5D5420C /* DatabaseResult.h */,
+				7E84962F036A3E1D3C047CC7 /* FMDBResult.m */,
+				7E849CC1BE08421761A60E7E /* FMDBResult.h */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		7E849ACC1585A0B6E5170D55 /* DataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				7E8498E285C4B730038111F5 /* DataHelperTestObject.m */,
+				7E849003C7B1F5EA61614D63 /* DataHelperTestObject.h */,
+			);
+			path = DataHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A58A181170EDC1600E8C841 /* DbMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A58A1A7170EDC1600E8C841 /* Build configuration list for PBXNativeTarget "DbMapper" */;
+			buildPhases = (
+				4A58A17E170EDC1600E8C841 /* Sources */,
+				4A58A17F170EDC1600E8C841 /* Frameworks */,
+				4A58A180170EDC1600E8C841 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DbMapper;
+			productName = DbMapper;
+			productReference = 4A58A182170EDC1600E8C841 /* libDbMapper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4A58A192170EDC1600E8C841 /* DbMapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A58A1AA170EDC1600E8C841 /* Build configuration list for PBXNativeTarget "DbMapperTests" */;
+			buildPhases = (
+				4A58A18E170EDC1600E8C841 /* Sources */,
+				4A58A18F170EDC1600E8C841 /* Frameworks */,
+				4A58A190170EDC1600E8C841 /* Resources */,
+				4A58A191170EDC1600E8C841 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A58A19A170EDC1600E8C841 /* PBXTargetDependency */,
+			);
+			name = DbMapperTests;
+			productName = DbMapperTests;
+			productReference = 4A58A193170EDC1600E8C841 /* DbMapperTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A58A17A170EDC1600E8C841 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = envman;
+			};
+			buildConfigurationList = 4A58A17D170EDC1600E8C841 /* Build configuration list for PBXProject "DbMapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4A58A179170EDC1600E8C841;
+			productRefGroup = 4A58A183170EDC1600E8C841 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A58A181170EDC1600E8C841 /* DbMapper */,
+				4A58A192170EDC1600E8C841 /* DbMapperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A58A190170EDC1600E8C841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E8495E1F17BF742EEE8146A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A58A191170EDC1600E8C841 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A58A17E170EDC1600E8C841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E84993C8A42EC02F28415BF /* Mappable.m in Sources */,
+				7E849D5F79C2C1D6ECA86CE6 /* Mapping.m in Sources */,
+				7E8495ECCCCFBAF69B2547DE /* FMDBDatabase.m in Sources */,
+				7E849B26B96F076EF5651001 /* Database.m in Sources */,
+				7E8497DC6EEB4FB39B6FC5DD /* DatabaseResult.m in Sources */,
+				7E84971C880CF3E36FC07518 /* FMDBResult.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A58A18E170EDC1600E8C841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E849151741904F7B4067E8C /* Test_Mappable.m in Sources */,
+				7E849BE2279895C296FA4709 /* TestMappable.m in Sources */,
+				7E84959F1233F449BB2EB827 /* TestDatabase.m in Sources */,
+				7E8490B7EE6BFDEDA91B06A1 /* MultipleTestMappable.m in Sources */,
+				7E849480DF414C00EAFAD039 /* AlternateNameMappable.m in Sources */,
+				7E8491CA3CF84A1514AC23B4 /* DataHelper.m in Sources */,
+				7E8495904FC28F46C3E23A56 /* Test_DataHelper.m in Sources */,
+				7E84953D81D729480B3D6DFF /* DataHelperTestObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A58A19A170EDC1600E8C841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A58A181170EDC1600E8C841 /* DbMapper */;
+			targetProxy = 4A58A199170EDC1600E8C841 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E8496983C28E78F8DED7EF2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E8492A24B76B91E65D52BE6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A58A1A5170EDC1600E8C841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../../libs/fmdb/src/";
+			};
+			name = Debug;
+		};
+		4A58A1A6170EDC1600E8C841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../../libs/fmdb/src/";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A58A1A8170EDC1600E8C841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DbMapper.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DbMapper/DbMapper-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4A58A1A9170EDC1600E8C841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DbMapper.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DbMapper/DbMapper-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4A58A1AB170EDC1600E8C841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DbMapper/DbMapper-Prefix.pch";
+				INFOPLIST_FILE = "DbMapperTests/DbMapperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4A58A1AC170EDC1600E8C841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DbMapper/DbMapper-Prefix.pch";
+				INFOPLIST_FILE = "DbMapperTests/DbMapperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A58A17D170EDC1600E8C841 /* Build configuration list for PBXProject "DbMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A58A1A5170EDC1600E8C841 /* Debug */,
+				4A58A1A6170EDC1600E8C841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A58A1A7170EDC1600E8C841 /* Build configuration list for PBXNativeTarget "DbMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A58A1A8170EDC1600E8C841 /* Debug */,
+				4A58A1A9170EDC1600E8C841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A58A1AA170EDC1600E8C841 /* Build configuration list for PBXNativeTarget "DbMapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A58A1AB170EDC1600E8C841 /* Debug */,
+				4A58A1AC170EDC1600E8C841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A58A17A170EDC1600E8C841 /* Project object */;
+}

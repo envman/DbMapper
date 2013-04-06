@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A58A24E170EDD1500E8C841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A24D170EDD1400E8C841 /* Foundation.framework */; };
+		4A58A253170EDD1500E8C841 /* DbMapper_Demo_DataAccess.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A58A252170EDD1500E8C841 /* DbMapper_Demo_DataAccess.h */; };
+		4A58A255170EDD1500E8C841 /* DbMapper_Demo_DataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A58A254170EDD1500E8C841 /* DbMapper_Demo_DataAccess.m */; };
+		4A58A25D170EDD1500E8C841 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A25C170EDD1500E8C841 /* SenTestingKit.framework */; };
+		4A58A25F170EDD1500E8C841 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A25E170EDD1500E8C841 /* UIKit.framework */; };
+		4A58A260170EDD1500E8C841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A24D170EDD1400E8C841 /* Foundation.framework */; };
+		4A58A263170EDD1500E8C841 /* libDbMapper.Demo.DataAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A24A170EDD1400E8C841 /* libDbMapper.Demo.DataAccess.a */; };
+		4A58A269170EDD1500E8C841 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A58A267170EDD1500E8C841 /* InfoPlist.strings */; };
+		4A58A26C170EDD1500E8C841 /* DbMapper_Demo_DataAccessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A58A26B170EDD1500E8C841 /* DbMapper_Demo_DataAccessTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A58A261170EDD1500E8C841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A58A242170EDD1400E8C841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A58A249170EDD1400E8C841;
+			remoteInfo = DbMapper.Demo.DataAccess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A58A248170EDD1400E8C841 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				4A58A253170EDD1500E8C841 /* DbMapper_Demo_DataAccess.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A58A24A170EDD1400E8C841 /* libDbMapper.Demo.DataAccess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDbMapper.Demo.DataAccess.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A58A24D170EDD1400E8C841 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A58A251170EDD1500E8C841 /* DbMapper.Demo.DataAccess-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DbMapper.Demo.DataAccess-Prefix.pch"; sourceTree = "<group>"; };
+		4A58A252170EDD1500E8C841 /* DbMapper_Demo_DataAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DbMapper_Demo_DataAccess.h; sourceTree = "<group>"; };
+		4A58A254170EDD1500E8C841 /* DbMapper_Demo_DataAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DbMapper_Demo_DataAccess.m; sourceTree = "<group>"; };
+		4A58A25B170EDD1500E8C841 /* DbMapper.Demo.DataAccessTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DbMapper.Demo.DataAccessTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A58A25C170EDD1500E8C841 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4A58A25E170EDD1500E8C841 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4A58A266170EDD1500E8C841 /* DbMapper.Demo.DataAccessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DbMapper.Demo.DataAccessTests-Info.plist"; sourceTree = "<group>"; };
+		4A58A268170EDD1500E8C841 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A58A26A170EDD1500E8C841 /* DbMapper_Demo_DataAccessTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DbMapper_Demo_DataAccessTests.h; sourceTree = "<group>"; };
+		4A58A26B170EDD1500E8C841 /* DbMapper_Demo_DataAccessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DbMapper_Demo_DataAccessTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A58A247170EDD1400E8C841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A58A24E170EDD1500E8C841 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A58A257170EDD1500E8C841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A58A25D170EDD1500E8C841 /* SenTestingKit.framework in Frameworks */,
+				4A58A25F170EDD1500E8C841 /* UIKit.framework in Frameworks */,
+				4A58A260170EDD1500E8C841 /* Foundation.framework in Frameworks */,
+				4A58A263170EDD1500E8C841 /* libDbMapper.Demo.DataAccess.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A58A241170EDD1400E8C841 = {
+			isa = PBXGroup;
+			children = (
+				4A58A24F170EDD1500E8C841 /* DbMapper.Demo.DataAccess */,
+				4A58A264170EDD1500E8C841 /* DbMapper.Demo.DataAccessTests */,
+				4A58A24C170EDD1400E8C841 /* Frameworks */,
+				4A58A24B170EDD1400E8C841 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A58A24B170EDD1400E8C841 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A24A170EDD1400E8C841 /* libDbMapper.Demo.DataAccess.a */,
+				4A58A25B170EDD1500E8C841 /* DbMapper.Demo.DataAccessTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A58A24C170EDD1400E8C841 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A24D170EDD1400E8C841 /* Foundation.framework */,
+				4A58A25C170EDD1500E8C841 /* SenTestingKit.framework */,
+				4A58A25E170EDD1500E8C841 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A58A24F170EDD1500E8C841 /* DbMapper.Demo.DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A252170EDD1500E8C841 /* DbMapper_Demo_DataAccess.h */,
+				4A58A254170EDD1500E8C841 /* DbMapper_Demo_DataAccess.m */,
+				4A58A250170EDD1500E8C841 /* Supporting Files */,
+			);
+			path = DbMapper.Demo.DataAccess;
+			sourceTree = "<group>";
+		};
+		4A58A250170EDD1500E8C841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A251170EDD1500E8C841 /* DbMapper.Demo.DataAccess-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A58A264170EDD1500E8C841 /* DbMapper.Demo.DataAccessTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A26A170EDD1500E8C841 /* DbMapper_Demo_DataAccessTests.h */,
+				4A58A26B170EDD1500E8C841 /* DbMapper_Demo_DataAccessTests.m */,
+				4A58A265170EDD1500E8C841 /* Supporting Files */,
+			);
+			path = DbMapper.Demo.DataAccessTests;
+			sourceTree = "<group>";
+		};
+		4A58A265170EDD1500E8C841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A266170EDD1500E8C841 /* DbMapper.Demo.DataAccessTests-Info.plist */,
+				4A58A267170EDD1500E8C841 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A58A249170EDD1400E8C841 /* DbMapper.Demo.DataAccess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A58A26F170EDD1500E8C841 /* Build configuration list for PBXNativeTarget "DbMapper.Demo.DataAccess" */;
+			buildPhases = (
+				4A58A246170EDD1400E8C841 /* Sources */,
+				4A58A247170EDD1400E8C841 /* Frameworks */,
+				4A58A248170EDD1400E8C841 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DbMapper.Demo.DataAccess;
+			productName = DbMapper.Demo.DataAccess;
+			productReference = 4A58A24A170EDD1400E8C841 /* libDbMapper.Demo.DataAccess.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4A58A25A170EDD1500E8C841 /* DbMapper.Demo.DataAccessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A58A272170EDD1500E8C841 /* Build configuration list for PBXNativeTarget "DbMapper.Demo.DataAccessTests" */;
+			buildPhases = (
+				4A58A256170EDD1500E8C841 /* Sources */,
+				4A58A257170EDD1500E8C841 /* Frameworks */,
+				4A58A258170EDD1500E8C841 /* Resources */,
+				4A58A259170EDD1500E8C841 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A58A262170EDD1500E8C841 /* PBXTargetDependency */,
+			);
+			name = DbMapper.Demo.DataAccessTests;
+			productName = DbMapper.Demo.DataAccessTests;
+			productReference = 4A58A25B170EDD1500E8C841 /* DbMapper.Demo.DataAccessTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A58A242170EDD1400E8C841 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = envman;
+			};
+			buildConfigurationList = 4A58A245170EDD1400E8C841 /* Build configuration list for PBXProject "DbMapper.Demo.DataAccess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4A58A241170EDD1400E8C841;
+			productRefGroup = 4A58A24B170EDD1400E8C841 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A58A249170EDD1400E8C841 /* DbMapper.Demo.DataAccess */,
+				4A58A25A170EDD1500E8C841 /* DbMapper.Demo.DataAccessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A58A258170EDD1500E8C841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A58A269170EDD1500E8C841 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A58A259170EDD1500E8C841 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A58A246170EDD1400E8C841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A58A255170EDD1500E8C841 /* DbMapper_Demo_DataAccess.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A58A256170EDD1500E8C841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A58A26C170EDD1500E8C841 /* DbMapper_Demo_DataAccessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A58A262170EDD1500E8C841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A58A249170EDD1400E8C841 /* DbMapper.Demo.DataAccess */;
+			targetProxy = 4A58A261170EDD1500E8C841 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A58A267170EDD1500E8C841 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A58A268170EDD1500E8C841 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A58A26D170EDD1500E8C841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4A58A26E170EDD1500E8C841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A58A270170EDD1500E8C841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DbMapper_Demo_DataAccess.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DbMapper.Demo.DataAccess/DbMapper.Demo.DataAccess-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4A58A271170EDD1500E8C841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DbMapper_Demo_DataAccess.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DbMapper.Demo.DataAccess/DbMapper.Demo.DataAccess-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4A58A273170EDD1500E8C841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DbMapper.Demo.DataAccess/DbMapper.Demo.DataAccess-Prefix.pch";
+				INFOPLIST_FILE = "DbMapper.Demo.DataAccessTests/DbMapper.Demo.DataAccessTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4A58A274170EDD1500E8C841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DbMapper.Demo.DataAccess/DbMapper.Demo.DataAccess-Prefix.pch";
+				INFOPLIST_FILE = "DbMapper.Demo.DataAccessTests/DbMapper.Demo.DataAccessTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A58A245170EDD1400E8C841 /* Build configuration list for PBXProject "DbMapper.Demo.DataAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A58A26D170EDD1500E8C841 /* Debug */,
+				4A58A26E170EDD1500E8C841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A58A26F170EDD1500E8C841 /* Build configuration list for PBXNativeTarget "DbMapper.Demo.DataAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A58A270170EDD1500E8C841 /* Debug */,
+				4A58A271170EDD1500E8C841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4A58A272170EDD1500E8C841 /* Build configuration list for PBXNativeTarget "DbMapper.Demo.DataAccessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A58A273170EDD1500E8C841 /* Debug */,
+				4A58A274170EDD1500E8C841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A58A242170EDD1400E8C841 /* Project object */;
+}
