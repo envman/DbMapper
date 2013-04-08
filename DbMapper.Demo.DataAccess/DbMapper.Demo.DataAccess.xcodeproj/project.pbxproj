@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4A58A24E170EDD1500E8C841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A24D170EDD1400E8C841 /* Foundation.framework */; };
-		4A58A253170EDD1500E8C841 /* DbMapper_Demo_DataAccess.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A58A252170EDD1500E8C841 /* DbMapper_Demo_DataAccess.h */; };
-		4A58A255170EDD1500E8C841 /* DbMapper_Demo_DataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A58A254170EDD1500E8C841 /* DbMapper_Demo_DataAccess.m */; };
 		4A58A25D170EDD1500E8C841 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A25C170EDD1500E8C841 /* SenTestingKit.framework */; };
 		4A58A25F170EDD1500E8C841 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A25E170EDD1500E8C841 /* UIKit.framework */; };
 		4A58A260170EDD1500E8C841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A24D170EDD1400E8C841 /* Foundation.framework */; };
@@ -35,7 +33,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				4A58A253170EDD1500E8C841 /* DbMapper_Demo_DataAccess.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +42,6 @@
 		4A58A24A170EDD1400E8C841 /* libDbMapper.Demo.DataAccess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDbMapper.Demo.DataAccess.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A58A24D170EDD1400E8C841 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4A58A251170EDD1500E8C841 /* DbMapper.Demo.DataAccess-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DbMapper.Demo.DataAccess-Prefix.pch"; sourceTree = "<group>"; };
-		4A58A252170EDD1500E8C841 /* DbMapper_Demo_DataAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DbMapper_Demo_DataAccess.h; sourceTree = "<group>"; };
-		4A58A254170EDD1500E8C841 /* DbMapper_Demo_DataAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DbMapper_Demo_DataAccess.m; sourceTree = "<group>"; };
 		4A58A25B170EDD1500E8C841 /* DbMapper.Demo.DataAccessTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DbMapper.Demo.DataAccessTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A58A25C170EDD1500E8C841 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		4A58A25E170EDD1500E8C841 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -82,10 +77,9 @@
 		4A58A241170EDD1400E8C841 = {
 			isa = PBXGroup;
 			children = (
-				4A58A24F170EDD1500E8C841 /* DbMapper.Demo.DataAccess */,
-				4A58A264170EDD1500E8C841 /* DbMapper.Demo.DataAccessTests */,
-				4A58A24C170EDD1400E8C841 /* Frameworks */,
-				4A58A24B170EDD1400E8C841 /* Products */,
+				4AB0F7AA1712F6000012BFDC /* Project */,
+				4AB0F7AB1712F6320012BFDC /* Source */,
+				4A58A264170EDD1500E8C841 /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,41 +102,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4A58A24F170EDD1500E8C841 /* DbMapper.Demo.DataAccess */ = {
-			isa = PBXGroup;
-			children = (
-				4A58A252170EDD1500E8C841 /* DbMapper_Demo_DataAccess.h */,
-				4A58A254170EDD1500E8C841 /* DbMapper_Demo_DataAccess.m */,
-				4A58A250170EDD1500E8C841 /* Supporting Files */,
-			);
-			path = DbMapper.Demo.DataAccess;
-			sourceTree = "<group>";
-		};
 		4A58A250170EDD1500E8C841 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				4A58A251170EDD1500E8C841 /* DbMapper.Demo.DataAccess-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = DbMapper.Demo.DataAccess;
 			sourceTree = "<group>";
 		};
-		4A58A264170EDD1500E8C841 /* DbMapper.Demo.DataAccessTests */ = {
+		4A58A264170EDD1500E8C841 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				4A58A26A170EDD1500E8C841 /* DbMapper_Demo_DataAccessTests.h */,
 				4A58A26B170EDD1500E8C841 /* DbMapper_Demo_DataAccessTests.m */,
-				4A58A265170EDD1500E8C841 /* Supporting Files */,
 			);
+			name = Tests;
 			path = DbMapper.Demo.DataAccessTests;
 			sourceTree = "<group>";
 		};
-		4A58A265170EDD1500E8C841 /* Supporting Files */ = {
+		4A58A265170EDD1500E8C841 /* Test Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				4A58A266170EDD1500E8C841 /* DbMapper.Demo.DataAccessTests-Info.plist */,
 				4A58A267170EDD1500E8C841 /* InfoPlist.strings */,
 			);
-			name = "Supporting Files";
+			name = "Test Supporting Files";
+			path = DbMapper.Demo.DataAccessTests;
+			sourceTree = "<group>";
+		};
+		4AB0F7AA1712F6000012BFDC /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A24C170EDD1400E8C841 /* Frameworks */,
+				4A58A24B170EDD1400E8C841 /* Products */,
+				4A58A265170EDD1500E8C841 /* Test Supporting Files */,
+				4A58A250170EDD1500E8C841 /* Supporting Files */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		4AB0F7AB1712F6320012BFDC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A58A255170EDD1500E8C841 /* DbMapper_Demo_DataAccess.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +406,7 @@
 				4A58A271170EDD1500E8C841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A58A272170EDD1500E8C841 /* Build configuration list for PBXNativeTarget "DbMapper.Demo.DataAccessTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +415,7 @@
 				4A58A274170EDD1500E8C841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

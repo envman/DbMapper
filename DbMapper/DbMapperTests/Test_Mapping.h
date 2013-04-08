@@ -5,11 +5,9 @@
 //
 
 
-#import "Test_Mapping.h"
+#import <Foundation/Foundation.h>
+#import <SenTestingKit/SenTestingKit.h>
 
 
-@implementation Test_Mapping
-{
-
-}
+@interface Test_Mapping : SenTestCase
 @end

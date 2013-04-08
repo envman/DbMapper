@@ -24,6 +24,9 @@
 		4A58A22D170EDCFE00E8C841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A58A205170EDCFE00E8C841 /* Foundation.framework */; };
 		4A58A235170EDCFE00E8C841 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A58A233170EDCFE00E8C841 /* InfoPlist.strings */; };
 		4A58A238170EDCFE00E8C841 /* DbMapper_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A58A237170EDCFE00E8C841 /* DbMapper_DemoTests.m */; };
+		4AB0F7A71712ECA70012BFDC /* libDbMapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB0F7A41712ECA70012BFDC /* libDbMapper.a */; };
+		4AB0F7A81712ECA70012BFDC /* libDbMapper.Demo.DataAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB0F7A51712ECA70012BFDC /* libDbMapper.Demo.DataAccess.a */; };
+		4AB0F7A91712ECA70012BFDC /* libFmdb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB0F7A61712ECA70012BFDC /* libFmdb.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		4A58A234170EDCFE00E8C841 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A58A236170EDCFE00E8C841 /* DbMapper_DemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DbMapper_DemoTests.h; sourceTree = "<group>"; };
 		4A58A237170EDCFE00E8C841 /* DbMapper_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DbMapper_DemoTests.m; sourceTree = "<group>"; };
+		4AB0F7A41712ECA70012BFDC /* libDbMapper.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libDbMapper.a; path = "../DbMapper/build/Release-iphoneos/libDbMapper.a"; sourceTree = "<group>"; };
+		4AB0F7A51712ECA70012BFDC /* libDbMapper.Demo.DataAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDbMapper.Demo.DataAccess.a; path = "/Users/robertgill/DbMapper/DbMapper.Demo.DataAccess/build/Release-iphoneos/libDbMapper.Demo.DataAccess.a"; sourceTree = "<absolute>"; };
+		4AB0F7A61712ECA70012BFDC /* libFmdb.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libFmdb.a; path = "../Fmdb/build/Release-iphoneos/libFmdb.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB0F7A71712ECA70012BFDC /* libDbMapper.a in Frameworks */,
+				4AB0F7A81712ECA70012BFDC /* libDbMapper.Demo.DataAccess.a in Frameworks */,
+				4AB0F7A91712ECA70012BFDC /* libFmdb.a in Frameworks */,
 				4A58A204170EDCFE00E8C841 /* UIKit.framework in Frameworks */,
 				4A58A206170EDCFE00E8C841 /* Foundation.framework in Frameworks */,
 				4A58A208170EDCFE00E8C841 /* CoreGraphics.framework in Frameworks */,
@@ -89,10 +98,9 @@
 		4A58A1F7170EDCFE00E8C841 = {
 			isa = PBXGroup;
 			children = (
-				4A58A209170EDCFE00E8C841 /* DbMapper.Demo */,
-				4A58A230170EDCFE00E8C841 /* DbMapper.DemoTests */,
-				4A58A202170EDCFE00E8C841 /* Frameworks */,
-				4A58A201170EDCFE00E8C841 /* Products */,
+				4AB0F7A11712D6620012BFDC /* Project */,
+				4AB0F7A21712D66B0012BFDC /* Source */,
+				4A58A230170EDCFE00E8C841 /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +116,9 @@
 		4A58A202170EDCFE00E8C841 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4AB0F7A41712ECA70012BFDC /* libDbMapper.a */,
+				4AB0F7A51712ECA70012BFDC /* libDbMapper.Demo.DataAccess.a */,
+				4AB0F7A61712ECA70012BFDC /* libFmdb.a */,
 				4A58A203170EDCFE00E8C841 /* UIKit.framework */,
 				4A58A205170EDCFE00E8C841 /* Foundation.framework */,
 				4A58A207170EDCFE00E8C841 /* CoreGraphics.framework */,
@@ -144,23 +155,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4A58A230170EDCFE00E8C841 /* DbMapper.DemoTests */ = {
+		4A58A230170EDCFE00E8C841 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				4A58A236170EDCFE00E8C841 /* DbMapper_DemoTests.h */,
 				4A58A237170EDCFE00E8C841 /* DbMapper_DemoTests.m */,
-				4A58A231170EDCFE00E8C841 /* Supporting Files */,
 			);
+			name = Tests;
 			path = DbMapper.DemoTests;
 			sourceTree = "<group>";
 		};
-		4A58A231170EDCFE00E8C841 /* Supporting Files */ = {
+		4A58A231170EDCFE00E8C841 /* Test Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				4A58A232170EDCFE00E8C841 /* DbMapper.DemoTests-Info.plist */,
 				4A58A233170EDCFE00E8C841 /* InfoPlist.strings */,
 			);
-			name = "Supporting Files";
+			name = "Test Supporting Files";
+			path = DbMapper.DemoTests;
+			sourceTree = "<group>";
+		};
+		4AB0F7A11712D6620012BFDC /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A201170EDCFE00E8C841 /* Products */,
+				4A58A202170EDCFE00E8C841 /* Frameworks */,
+				4A58A231170EDCFE00E8C841 /* Test Supporting Files */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		4AB0F7A21712D66B0012BFDC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4A58A209170EDCFE00E8C841 /* DbMapper.Demo */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +429,7 @@
 				GCC_PREFIX_HEADER = "DbMapper.Demo/DbMapper.Demo-Prefix.pch";
 				INFOPLIST_FILE = "DbMapper.Demo/DbMapper.Demo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../DbMapper";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -410,6 +441,7 @@
 				GCC_PREFIX_HEADER = "DbMapper.Demo/DbMapper.Demo-Prefix.pch";
 				INFOPLIST_FILE = "DbMapper.Demo/DbMapper.Demo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../DbMapper";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -467,6 +499,7 @@
 				4A58A23D170EDCFE00E8C841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A58A23E170EDCFE00E8C841 /* Build configuration list for PBXNativeTarget "DbMapper.DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +508,7 @@
 				4A58A240170EDCFE00E8C841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

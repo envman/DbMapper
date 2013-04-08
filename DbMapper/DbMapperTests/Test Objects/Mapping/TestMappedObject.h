@@ -8,5 +8,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Test_Mapping : NSObject
+@interface TestMappedObject : NSObject
+@property(nonatomic, copy) NSString *testString;
+@property(nonatomic) int testInt;
 @end
