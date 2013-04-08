@@ -12,7 +12,6 @@
 #import "TestMappable.h"
 #import "MultipleTestMappable.h"
 #import "AlternateNameMappable.h"
-#import "DataHelper.h"
 
 
 @implementation Test_Mappable
@@ -42,8 +41,6 @@
     {
         STFail(@"Incorrect String generated., %@", lastQuery);
     }
-
-    NSLog(@"Test passed with query: %@", lastQuery);
 }
 
 - (void)testSave_RunsUpdate
@@ -61,8 +58,6 @@
     {
         STFail(@"Incorrect String generated., %@", lastQuery);
     }
-
-    NSLog(@"Test passed with query: %@", lastQuery);
 }
 
 - (void)testSave_CorrectInsertQuery
@@ -76,7 +71,6 @@
     NSString *correctQuery = @"INSERT INTO TestMappable (testMappingString) VALUES (?)";
 
     STAssertEqualObjects(lastQuery, correctQuery, @"Query not correct %@", lastQuery);
-    NSLog(@"Test passed with query: %@", lastQuery);
 }
 
 - (void)testSave_MultipleInsert
@@ -97,11 +91,10 @@
     NSArray *array = testDatabase.lastParameterSet;
 
     STAssertEqualObjects(array[0], @"Test1", @"String should be Test1 %@", array[0]);
-    STAssertEqualObjects(array[1], @4, @"int should be 5 %i", array[1]);
+    STAssertEqualObjects(array[1], @5, @"int should be 5 %i", array[1]);
     STAssertEqualObjects(array[2], @9, @"int should be 9 %i", array[2]);
 
     STAssertEqualObjects(lastQuery, correctQuery, @"Query not correct %@", lastQuery);
-    NSLog(@"Test passed with query: %@", lastQuery);
 }
 
 - (void)testSave_TableNameOverride
@@ -116,7 +109,6 @@
     NSString *correctQuery = @"INSERT INTO NewTableName (testMappingString) VALUES (?)";
 
     STAssertEqualObjects(lastQuery, correctQuery, @"Query not correct %@", lastQuery);
-    NSLog(@"Test passed with query: %@", lastQuery);
 }
 
 - (void)testSave_TestAlternateNameMappable
@@ -130,15 +122,6 @@
     NSString *correctQuery = @"INSERT INTO AlternateNameMappable (TestColumn) VALUES (?)";
 
     STAssertEqualObjects(lastQuery, correctQuery, @"Query not correct %@", lastQuery);
-    NSLog(@"Test passed with query: %@", lastQuery);
-}
-
-- (void)test
-{
-    MultipleTestMappable *mappable = [MultipleTestMappable new];
-
-    NSString *type = [DataHelper getPropertyType:[mappable class] WithName:@"testNumber"];
-    NSLog(@"%@", type);
 }
 
 @end

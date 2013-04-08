@@ -28,11 +28,13 @@
 		7E8495E1F17BF742EEE8146A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E8496983C28E78F8DED7EF2 /* InfoPlist.strings */; };
 		7E8495ECCCCFBAF69B2547DE /* FMDBDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E84956092EC25A6FE470EC4 /* FMDBDatabase.m */; };
 		7E84971C880CF3E36FC07518 /* FMDBResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E84962F036A3E1D3C047CC7 /* FMDBResult.m */; };
+		7E8497332631C4B668EB46CA /* Test_Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849382F19411AC946E464D /* Test_Mapping.m */; };
 		7E8497DC6EEB4FB39B6FC5DD /* DatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E84986777438A38DFB64BD9 /* DatabaseResult.m */; };
 		7E849933BD8BC8C40D6A3E6C /* Mappable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E849BD1FC29F7906E722B0B /* Mappable.h */; };
 		7E84993C8A42EC02F28415BF /* Mappable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849E9EB1266BC3B891D335 /* Mappable.m */; };
 		7E849B26B96F076EF5651001 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849472FAAC6375836F244C /* Database.m */; };
 		7E849B7AC2A667122E00ECE1 /* DatabaseResult.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E8494926AE14CAFD5D5420C /* DatabaseResult.h */; };
+		7E849BDBA1319B57FBB26EAE /* DataHelperTestSubObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849AD87A63D90C37059507 /* DataHelperTestSubObject.m */; };
 		7E849BE2279895C296FA4709 /* TestMappable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849C6F1289DA43D1F7B56B /* TestMappable.m */; };
 		7E849D5F79C2C1D6ECA86CE6 /* Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E849B42374A3DF6B623C271 /* Mapping.m */; };
 		7E849E6D32190071422815CB /* FMDBDatabase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E849498D4FB027E01990ABC /* FMDBDatabase.h */; };
@@ -84,6 +86,7 @@
 		7E84932E47CDCD7D61DCFC64 /* Test_DataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_DataHelper.m; sourceTree = "<group>"; };
 		7E84934230E71A7293BDCF49 /* MultipleTestMappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleTestMappable.h; sourceTree = "<group>"; };
 		7E84937EDEDA8E138C404E97 /* AlternateNameMappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlternateNameMappable.h; sourceTree = "<group>"; };
+		7E849382F19411AC946E464D /* Test_Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_Mapping.m; sourceTree = "<group>"; };
 		7E849384CC31BB92C2701620 /* MultipleTestMappable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleTestMappable.m; sourceTree = "<group>"; };
 		7E849472FAAC6375836F244C /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
 		7E8494926AE14CAFD5D5420C /* DatabaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseResult.h; sourceTree = "<group>"; };
@@ -97,13 +100,16 @@
 		7E8498E285C4B730038111F5 /* DataHelperTestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHelperTestObject.m; sourceTree = "<group>"; };
 		7E8499AC8C9DEFF6DD3CE329 /* Test_Mappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_Mappable.h; sourceTree = "<group>"; };
 		7E849AAD01751552C1BE1392 /* TestDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDatabase.m; sourceTree = "<group>"; };
+		7E849AD87A63D90C37059507 /* DataHelperTestSubObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHelperTestSubObject.m; sourceTree = "<group>"; };
 		7E849B42374A3DF6B623C271 /* Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapping.m; sourceTree = "<group>"; };
 		7E849B8E72B5E0BC38989E9E /* Test_DataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_DataHelper.h; sourceTree = "<group>"; };
 		7E849BA4EBDDAF1E4A04DF4E /* AlternateNameMappable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlternateNameMappable.m; sourceTree = "<group>"; };
 		7E849BD1FC29F7906E722B0B /* Mappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mappable.h; sourceTree = "<group>"; };
+		7E849C0E08DBC2C5DA30FF4A /* Test_Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_Mapping.h; sourceTree = "<group>"; };
 		7E849C6F1289DA43D1F7B56B /* TestMappable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMappable.m; sourceTree = "<group>"; };
 		7E849CC1BE08421761A60E7E /* FMDBResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBResult.h; sourceTree = "<group>"; };
 		7E849CEE324935B8ADEA7C3C /* DataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHelper.m; sourceTree = "<group>"; };
+		7E849DD5828817EA00BBEABE /* DataHelperTestSubObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHelperTestSubObject.h; sourceTree = "<group>"; };
 		7E849E9EB1266BC3B891D335 /* Mappable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mappable.m; sourceTree = "<group>"; };
 		7E849FB9BF070C8F0DAD83E9 /* Test_Mappable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test_Mappable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,6 +237,8 @@
 				7E849BA4EBDDAF1E4A04DF4E /* AlternateNameMappable.m */,
 				7E84937EDEDA8E138C404E97 /* AlternateNameMappable.h */,
 				7E849ACC1585A0B6E5170D55 /* DataHelper */,
+				7E849382F19411AC946E464D /* Test_Mapping.m */,
+				7E849C0E08DBC2C5DA30FF4A /* Test_Mapping.h */,
 			);
 			path = "Test Objects";
 			sourceTree = "<group>";
@@ -265,6 +273,8 @@
 			children = (
 				7E8498E285C4B730038111F5 /* DataHelperTestObject.m */,
 				7E849003C7B1F5EA61614D63 /* DataHelperTestObject.h */,
+				7E849DD5828817EA00BBEABE /* DataHelperTestSubObject.h */,
+				7E849AD87A63D90C37059507 /* DataHelperTestSubObject.m */,
 			);
 			path = DataHelper;
 			sourceTree = "<group>";
@@ -388,6 +398,8 @@
 				7E8491CA3CF84A1514AC23B4 /* DataHelper.m in Sources */,
 				7E8495904FC28F46C3E23A56 /* Test_DataHelper.m in Sources */,
 				7E84953D81D729480B3D6DFF /* DataHelperTestObject.m in Sources */,
+				7E849BDBA1319B57FBB26EAE /* DataHelperTestSubObject.m in Sources */,
+				7E8497332631C4B668EB46CA /* Test_Mapping.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

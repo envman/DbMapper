@@ -7,8 +7,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class DataHelperTestSubObject;
+
 
 @interface DataHelperTestObject : NSObject
 @property(nonatomic, copy) NSString *string;
 @property(nonatomic) int numberInt;
+@property(nonatomic, strong) DataHelperTestSubObject *subObject;
 @end

@@ -16,4 +16,16 @@
     STAssertEqualObjects(type, TYPE_NSSTRING, @"Type should be NSString - %@", type);
 }
 
+- (void)testGetPropertyType_TypeIsInt
+{
+    NSString *type = [DataHelper getPropertyType:[DataHelperTestObject class] WithName:@"numberInt"];
+    STAssertEqualObjects(type, TYPE_INT, @"Type should be int - %@", type);
+}
+
+- (void)testGetPropertyType_TypeIsObject
+{
+    NSString *type = [DataHelper getPropertyType:[DataHelperTestObject class] WithName:@"subObject"];
+    STAssertEqualObjects(type, @"DataHelperTestSubObject", @"Type should be object - %@", type);
+}
+
 @end

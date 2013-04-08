@@ -16,6 +16,8 @@
     unsigned int count;
     objc_property_t *properties = class_copyPropertyList(class, &count);
 
+    NSMutableDictionary *propertyList = [NSMutableDictionary dictionary];
+
     for (NSUInteger i = 0; i < count; i++) {
         objc_property_t property = properties[i];
 
@@ -25,13 +27,11 @@
             const char *propType = [[DataHelper getPropertyType:property] cStringUsingEncoding:NSASCIIStringEncoding];
             NSString *propertyName = [NSString stringWithUTF8String:propName];
             NSString *propertyType = [NSString stringWithUTF8String:propType];
-            //[results setObject:propertyType forKey:propertyName];
-            //NSLog(@"%@, %@", propertyType, propertyName);
+            [propertyList setObject:propertyType forKey:propertyName];
         }
     }
 }
 
-//static const char * getPropertyType(objc_property_t property) {
 + (NSString *)getPropertyType:(objc_property_t)property
 {
     const char *attributes = property_getAttributes(property);
@@ -68,4 +68,23 @@
     objc_property_t property = class_getProperty(class, [propertyName cStringUsingEncoding:NSASCIIStringEncoding]);
     return [DataHelper getPropertyType:property];
 }
+
++ (BOOL)isNumberType:(NSString *)type
+{
+    if ([type isEqualToString:TYPE_INT])
+    {
+        return YES;
+    }
+    else if ([type isEqualToString:TYPE_UNSIGNED_INT])
+    {
+        return YES;
+    }
+    else if ([type isEqualToString:TYPE_LONG])
+    {
+        return YES;
+    }
+
+    return NO;
+}
+
 @end
